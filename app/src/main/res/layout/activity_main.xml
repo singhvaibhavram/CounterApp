@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/counterappbackground"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="243dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="306dp"
+        android:src="@drawable/counter"
+        app:layout_constraintBottom_toTopOf="@+id/counterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="84sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/counterButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="179dp"
+        android:backgroundTint="#63BBD2"
+        android:text="Click Me"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
