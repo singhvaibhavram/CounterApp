@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         counter_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counter_text.setText(""+increaseCount());
+                counter_text.setText(increaseCount());
             }
         });
 
